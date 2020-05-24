@@ -463,7 +463,8 @@ body {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 1000; }
+  z-index: 1000;
+  cursor: pointer; }
   #header .container {
     height: 76px;
     display: flex;
@@ -624,7 +625,9 @@ body {
 
 .services {
   background: #ffffff;
-  padding: 80px 0; }
+  padding: 80px 0;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 30px; }
   .services .title-area {
     text-align: center;
     margin-bottom: 30px; }
@@ -698,10 +701,6 @@ body {
         line-height: 1.4;
         color: #777; }
 
-.s_content {
-  font-size: 26px;
-  color: #7d7979; }
-
 .about {
   background: #ffffff;
   padding: 80px 0;
@@ -739,7 +738,8 @@ body {
 .contact {
   background: #ffffff;
   padding: 80px 0;
-  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2); }
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 60px; }
   .contact .title-area {
     text-align: center;
     margin-bottom: 30px;
@@ -751,14 +751,10 @@ body {
     .contact .title-area h2 {
       font-size: 30px;
       color: #333333; }
-  .contact .hello p {
-    font-size: 12px;
-    color: #888888;
-    margin-bottom: 10px; }
-  .contact .hello h2 {
-    font-size: 30px;
+  .contact #text {
+    font-size: 20px;
     color: #333333;
-    margin-bottom: 30px; }
+    line-height: 1.5; }
 
 #map {
   height: 500px; }
@@ -767,6 +763,7 @@ body {
       height: 200px; } }
 
 #footer {
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
   height: 120px;
   background: #ffffff;
   color: #777777;

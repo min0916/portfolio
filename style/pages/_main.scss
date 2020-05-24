@@ -132,6 +132,8 @@
 .services {
   background: #ffffff;
   padding: 80px 0;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
 
   .title-area {
     text-align: center;
@@ -239,11 +241,6 @@
   }
 }
 
-.s_content {
-  font-size: 26px;
-  color: #7d7979;
-}
-
 .about {
   background: #ffffff;
   padding: 80px 0;
@@ -296,6 +293,8 @@
   background: #ffffff;
   padding: 80px 0;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 60px;
+
   .title-area {
     text-align: center;
     margin-bottom: 30px;
@@ -312,21 +311,13 @@
       color: #333333;
     }
   }
-
-  .hello {
-    p {
-      font-size: 12px;
-      color: #888888;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-size: 30px;
-      color: #333333;
-      margin-bottom: 30px;
-    }
-  }
+      #text{
+        font-size: 20px;
+        color: #333333;
+        line-height: 1.5;
+      }
 }
+
 
 #map{
   height: 500px;
@@ -336,6 +327,7 @@
 }
 
 #footer{
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
   height: 120px;
   background: #ffffff;
   color: #777777;
