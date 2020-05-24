@@ -286,6 +286,9 @@
       line-height: 1.8;
       color: #333333;
       text-align: justify;
+      @include screen-sm{
+        margin-left: 12px;
+      }
     }
     #Motive{
       text-align: left;
