@@ -8,15 +8,15 @@
   position: relative;
 
 
-  .overflow {
+  .overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-  }
-;
+    background: rgba(0, 0, 0, 0.4);
+
+  };
 
   .text {
     position: relative;
@@ -115,7 +115,7 @@
 //section services
 .services {
   background: #ffffff;
-  padding: 80px;
+  padding: 80px 0;
 
   .title-area {
     text-align: center;
@@ -282,4 +282,19 @@
       }
     }
   }
+}
+
+#map{
+  height: 500px;
+}
+
+#footer{
+  height: 120px;
+  background: #ffffff;
+  color: #777777;
+  font-size: 13px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

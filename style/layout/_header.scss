@@ -6,29 +6,79 @@
   right: 0;
   top: 0;
   z-index: 1000;
-  background: #ffffff;
-
-  display: none;
-  .container{
+  //display: none;
+  .container {
     height: 76px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
   }
-  .logo{
+
+  .logo {
     font-size: 20px;
     color: #000;
     text-transform: capitalize;
   }
 
-  nav{
+  .screen{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 900;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    .open-manu &{
+      display: block;
+    };
+  }
+  nav {
     display: flex;
-      a{
-        display: flex;
-        padding: 0 15px;
-        height: 76px;
-        align-items: center;
-       }
+    @include screen-sm {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1000;
+      background: #ffffff;
+      width: 300px;
+      flex-direction: column;
+      padding-top: 60px;
+      -webkit-transform: translate(-100%, 0);
+      -moz-transform: translate(-100%, 0);
+      -ms-transform: translate(-100%, 0);
+      -o-transform: translate(-100%, 0);
+      transform: translate(-100%, 0);
+      -webkit-transition:  0.4s;
+      -moz-transition:  0.4s;
+      -ms-transition:  0.4s;
+      -o-transition:  0.4s;
+      transition:  0.4s;
+      .open-manu & {
+        transform: none;
+      }
+    }
+
+    a {
+      display: flex;
+      padding: 0 15px;
+      height: 76px;
+      align-items: center;
+      @include screen-sm {
+        height: 46px;
+        padding: 0 30px;
+      }
+    }
+  }
+
+  .btn-menu{
+    display: none;
+    @include screen-sm{
+      display: flex;
+      padding: 15px;
+      font-size: 24px;
+    }
   }
 }
