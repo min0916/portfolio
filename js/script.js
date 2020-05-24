@@ -9,6 +9,7 @@ const portfolio = {
         portfolio.handleHeader()
         portfolio.scrollTo()
         portfolio.openMenu()
+        portfolio.reset()
     },
     getScroll: function () {
         $(window).on('scroll', function () {
@@ -38,6 +39,8 @@ const portfolio = {
             $('html, body').animate({
                 scrollTop: offsetTop - 60
             })
+
+            portfolio.reset();
         })
     },
     openMenu: function () {
@@ -48,6 +51,10 @@ const portfolio = {
         $('#header .screen').on('click', function () {
             $('html').removeClass('open-manu');
         });
+    },
+    reset: function () {
+        $('html').removeClass('open-manu');
+
     }
 }
 

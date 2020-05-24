@@ -63,15 +63,17 @@
     -webkit-box-shadow: 1px 3px 25px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 1px 3px 25px rgba(0, 0, 0, 0.2);
     box-shadow: 1px 3px 25px rgba(0, 0, 0, 0.2);
-    padding: 55px 0;
+    padding: 55px 0 55px 50px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-
+    @include screen-sm {
+        flex-direction: column-reverse;
+      padding: 30px 20px;
+    }
     .text {
-      flex: 1;
-      padding: 20px 50px 0px;
-      max-width: 50%;
+      flex: 5;
+
 
       h2 {
         font-size: 32px;
@@ -79,6 +81,10 @@
         font-weight: 400;
         text-transform: capitalize;
         margin-bottom: 25px;
+        @include screen-sm{
+          font-size: 26px;
+          margin-bottom: 15px;
+        }
       }
 
       p {
@@ -86,20 +92,26 @@
         color: #666666;
         line-height: 1.6;
         margin-bottom: 20px;
+        @include screen-sm{
+          font-size: 18px;
+        }
       }
 
       .links {
         a {
           font-size: 20px;
           margin-right: 15px;
+
         }
       }
     }
 
     .photo {
-      flex: 1;
+      flex: 4;
       text-align: center;
-
+      @include screen-sm{
+        margin-bottom: 30px;
+      }
       img {
 
         width: 295px;
@@ -107,6 +119,10 @@
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
+        @include screen-sm{
+          width: 270px;
+          height: 270px;
+        }
       }
     }
   }
@@ -286,6 +302,9 @@
 
 #map{
   height: 500px;
+  @include screen-sm{
+    height: 200px;
+  }
 }
 
 #footer{
