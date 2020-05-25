@@ -737,7 +737,7 @@ body {
       text-align: justify; }
       @media only screen and (max-width: 768px) {
         .about .me li {
-          margin-left: 12px; } }
+          margin-left: 15px; } }
     .about .me #Motive {
       text-align: left;
       font-size: 18px;
